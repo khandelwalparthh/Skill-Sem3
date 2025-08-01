@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+</head>
+<body bgcolor="#f0f8ff">
+
+    <h1 style="color: #333399;">User Registration Form</h1>
+
+    <form action="submitted.html" method="get">
+        <p>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required>
+        </p>
+
+        <p>
+            <label>Email Address:</label><br>
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password" required>
+        </p>
+
+        <p>
+            <label>Confirm Password:</label><br>
+            <input type="password" name="confirmpassword" required>
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </p>
+
+        <p>
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="Reading"> Reading
+            <input type="checkbox" name="hobbies" value="Sports"> Sports
+            <input type="checkbox" name="hobbies" value="Music"> Music
+            <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+        </p>
+
+        <p>
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" required>
+        </p>
+
+        <p>
+            <label>Upload Profile Picture:</label><br>
+            <input type="file" name="profilepic">
+        </p>
+
+        <p>
+            <label>Country:</label><br>
+            <select name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Comments:</label><br>
+            <textarea name="comments" rows="4" cols="40" placeholder="Write something..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Application">
+        </p>
+    </form>
+
+</body>
+</html>
